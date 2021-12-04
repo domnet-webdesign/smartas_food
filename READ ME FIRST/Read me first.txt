@@ -1,0 +1,62 @@
+
+********************PLEASE FOLLOW CAREFULLY*******************
+**************************************************************
+1). PLEASE DROP YOUR PREVIOUS DATABASE CREATED AS "beavers_cousines"; 
+BEFORE DOING ANYTHING
+
+FOLLOW THE FOLLOWING STEPS TO DROP THE EXISTING DATABASE 
+IF ANY WITH DATABASE NAME "beavers_cousines"; 
+a). click on the beavers_cousines database at the left hand side
+    click on operations on the navbar
+    scroll down to "Remove database"
+    click on Drop the database (DROP)
+    CLICK ON OK.
+
+2). AFTER SUCCESSFULLY DROPPING THE EXISTING DATABASE "beavers_cousines"
+a). click on import from the database navbar
+    click on browse your computer "choose file"
+    you will be directed to you computer file system
+    click and open the Database folder inside the Resturantly folder
+    *You will see an beavers_cousines.sql file; click on it*
+    click on open;
+    the sql file will be selected and uploaded to your phpmyadmin
+Now dont change any default setting on your phpmyadmin
+scroll down to where you have "Go"
+MAKE SURE THE FORMAT IS SELECTED "SQL"
+
+The already created database will be uploaded to your machine.
+
+**************************************************************************
+AFTER COMPLETING THE ABOVE BEFORE YOU TRY THE LOGIN IN INTO THE DATABASE
+**************************************************************************
+
+
+
+HOMEPAGE:
+To access the Hompage use this url
+http://localhost/Restaurantly/smartas.php
+
+ADMIN:
+To access the admin: 
+
+http://localhost/Restaurantly/adminlogin.php
+USERNAME:	ada@gmail.com
+PASSWORD:	qwertyuiop
+
+
+USER:
+To access the USER: 
+
+http://localhost/Restaurantly/userlogin.php
+USERNAME:	udofia@gmail.com
+PASSWORD:	poiuytrewq
+
+***NOTE****
+You can register as a new admin using the url
+http://localhost/Restaurantly/adminsignup.php
+
+OR
+
+You can register as a new users using the url
+http://localhost/Restaurantly/usersignup.php
+
