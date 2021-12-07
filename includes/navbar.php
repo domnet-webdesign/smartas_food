@@ -1,6 +1,6 @@
 <body>
   <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-flex align-items-center fixed-top">
+  <div id="topbar" style="background-color: #000;" class="d-flex align-items-center fixed-top">
      <div class="container d-flex">
          <div class="contact-info mr-auto">
             <i class="icofont-phone"></i> 09098765432
@@ -25,9 +25,7 @@
       <nav class="nav-menu d-none d-lg-block">
          <ul>
                <li class="active"><a href="smartas.php">Home</a></li>
-               <li><a href="#about">About</a></li>
                <li><a href="#menu">Menu</a></li>
-               <li><a href="#specials">Specials</a></li>
                <li><a href="#specials">Account</a></li>
                                        <!-- <li><a href="#events">Events</a></li> -->
                                          <!-- <li><a href="#gallery">Gallery</a></li> -->

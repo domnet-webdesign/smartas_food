@@ -11,28 +11,38 @@
 <?php
                     if(isset($_GET['orders'])) {
 
-                        $id = $_GET['orders'];
+                        if($_SESSION['auth_role'] != '0') {
 
-                        //get the details of the selected food
-                        $sql = "SELECT * FROM menu where id = $id"; 
-                        $query = $connection->query($sql);
+                            header('location: userlogin.php');
 
-                        //count the rows
-                        $count = mysqli_num_rows($query);
+                        }
 
-                        //check whether the data is available or not
-                        if($count == 1) {
+                        if($_SESSION['auth_role'] == '0') {
 
-                            //we have data
-                            //get the data from the database
-                            $row = mysqli_fetch_assoc($query);
-                            $img = $row['img'];
-                            $menu_name = $row['menu_name'];
-                            $menu_price = $row['menu_price'];
+                            $id = $_GET['orders'];
+
+                            //get the details of the selected food
+                            $sql = "SELECT * FROM menu where id = $id"; 
+                            $query = $connection->query($sql);
+
+                            //count the rows
+                            $count = mysqli_num_rows($query);
+
+                            //check whether the data is available or not
+                            if($count == 1) {
+
+                                //we have data
+                                //get the data from the database
+                                $row = mysqli_fetch_assoc($query);
+                                $img = $row['img'];
+                                $menu_name = $row['menu_name'];
+                                $menu_price = $row['menu_price'];
+                                
                             
-                        
-                        }else {
+                            }else {
 
+                            } 
+                        }else {
                             
                         }
 
@@ -65,7 +75,7 @@
             </fieldset>
 
             <fieldset class="p-5">
-                <?php echo $_SESSION['message']; ?>
+                <p style="color: #fff;">uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu</p>
                 <legend>Delivery Details</legend>
                 <input type="hidden" required name="ordered_meal" class="form-control" id="" value="<?php echo $menu_name; ?>">
                 <input type="hidden" required name="meal_price" class="form-control" id="" value="<?php echo $menu_price; ?>">

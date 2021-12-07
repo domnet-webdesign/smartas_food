@@ -1,18 +1,11 @@
-
 ********************PLEASE FOLLOW CAREFULLY*******************
 **************************************************************
-1). PLEASE DROP YOUR PREVIOUS DATABASE CREATED AS "beavers_cousines"; 
-BEFORE DOING ANYTHING
 
-FOLLOW THE FOLLOWING STEPS TO DROP THE EXISTING DATABASE 
-IF ANY WITH DATABASE NAME "beavers_cousines"; 
-a). click on the beavers_cousines database at the left hand side
-    click on operations on the navbar
-    scroll down to "Remove database"
-    click on Drop the database (DROP)
-    CLICK ON OK.
+FOLLOW THE FOLLOWING STEPS
 
-2). AFTER SUCCESSFULLY DROPPING THE EXISTING DATABASE "beavers_cousines"
+1). OPEN YOUR XAMPP SOFTWARE AND START YOUR APACHE AND SQL 
+2.) OPEN YOUR PHPMYADMIN 
+3.) IMPORT DATABASE "beavers_cousines" TO YOUR PHPMYADMIN
 a). click on import from the database navbar
     click on browse your computer "choose file"
     you will be directed to you computer file system

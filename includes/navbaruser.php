@@ -1,6 +1,6 @@
 <body>
   <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-flex align-items-center fixed-top">
+  <div id="topbar" style="background-color: #000;" class="d-flex align-items-center fixed-top">
      <div class="container d-flex">
          <div class="contact-info mr-auto">
             <i class="icofont-phone"></i> 09098765432
@@ -9,7 +9,7 @@
          <div class="languages">
          <ul>
                <li><a href="userlogin.php">SIGNIN</a></li>
-               <li><a href="usersignup.php">SIGNUP</a></li>
+               <li><a href="logout.php">LOGOUT</a></li>
             </ul>
          </div>
       </div>

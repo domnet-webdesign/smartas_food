@@ -1,11 +1,17 @@
 <?php
 
+session_start();
+
+?>
+
+<?php
+
     include './includes/db.php';
 
     // //passing the users input into the function to validate the users input.
     $name = $email = $phone = $date = $time = $people = $message = "";
 
-    if (isset($_POST['submit'])) {
+    if (isset($_POST['submit']) && $_SESSION['auth_role'] == '0') {
 
             $name            = $_POST['name'];
             $email             = $_POST['email'];
@@ -15,8 +21,8 @@
             $people             = $_POST['people'];
             $message              = $_POST['message'];
 
-        $sql = "INSERT INTO reservation (reserveID, fullname, email, phone_number, date, time, number_people, mesage) 
-                 VALUES ('NULL', '$name', '$email', '$phone', '$date', '$time', '$people', '$message')";
+                $sql = "INSERT INTO reservation (reserveID, fullname, email, phone_number, date, time, number_people, mesage) 
+                VALUES ('NULL', '$name', '$email', '$phone', '$date', '$time', '$people', '$message')";
 
                 if(mysqli_query($connection, $sql) === true) {
 
@@ -27,12 +33,15 @@
                             window.location.replace('smartasuserlogin.php');
                         </script>
                     <?php
-                    }else {
+                }else {
                         echo "Registration Failed ! ! ! ";
                         //echo "<a href='registration.php'>Back to registration</a>";
-                    }
-            
+                }
+    }else {
 
-    }
+            header('location: userlogin.php');
+
+        }
+
 
 ?>
